@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="" type="image/x-icon" />
+    <!-- Vanila CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google Icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <title>Drunk text lyrics</title>
+  </head>
+  <body>
+    <canvas id="sakura"></canvas>
+    <div class="lyrics-container">
+      <!-- <h1>Lirik Lagu dengan Tombol Kontrol</h1> -->
+      <p id="lyrics"></p>
+    </div>
+    <audio id="audio" controls controlsList="nodownload">
+      <source
+        src="assets/drunk text.mp3"
+        type="audio/mp3"
+      />
+      Your browser does not support the audio element.
+    </audio>
+    <div class="controls">
+      <button id="rewindButton">
+        <span class="material-symbols-outlined"> skip_previous </span>
+      </button>
+      </button>
+      <button id="nextButton">
+        <span class="material-symbols-outlined"> skip_next </span>
+      </button>
+    </div>
+    <script src="sakura.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
